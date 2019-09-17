@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+
+cp=""
+for i in \
+	../forker-plugin-shell/target/classes \
+	../forker-plugin-system/target/classes \
+	../forker-plugin-api/target/classes \
+	target/forker-plugin-shell-0.0.1-SNAPSHOT.jar ; do
+	if [ -n "${cp}" ]; then
+		cp="${cp}:"
+	fi
+	cp="${cp}${i}"
+	
+done
+java -Dfile.encoding=UTF-8 -Djna.nosys=true -classpath "${cp}" com.sshtools.forker.plugin.shell.PluginShell $@

@@ -1,0 +1,6 @@
+package com.sshtools.forker.plugin.api;
+
+public enum PluginEvent {
+	PRE_START, START, POST_START, PRE_CLOSE, CLOSE, POST_CLOSE, PRE_INSTALL, INSTALL, POST_INSTALL, PRE_UNINSTALL,
+	UNINSTALL, POST_UNINSTALL
+}

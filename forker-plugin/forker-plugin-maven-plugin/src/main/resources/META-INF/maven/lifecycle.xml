@@ -1,0 +1,13 @@
+<!-- <lifecycles>
+	<lifecycle>
+		<id>feature</id>
+		<phases>
+			<phase>
+        		<id>feature-package</id>
+      		</phase>
+			<phase>
+				<id>feature-build</id>
+			</phase>
+		</phases>
+	</lifecycle>
+</lifecycles> -->
